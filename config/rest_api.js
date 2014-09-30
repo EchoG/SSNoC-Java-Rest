@@ -1,4 +1,4 @@
-var host_url = "http://localhost:1234/ssnoc";
+var host_url = "http://localhost:8080/fse-F14-SA4-SSNoC-Java-REST";
 
 module.exports = {
   'get_all_users' : host_url + '/users',
