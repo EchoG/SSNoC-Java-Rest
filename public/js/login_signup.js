@@ -38,7 +38,7 @@ function validateUserNameAndPassword() {
     return false;
   }
   
-  if(!$('#userName').val().trim().match(/^([a-zA-Z]{3,})$/)){
+  if(!$('#userName').val().trim().match(/^([a-zA-Z0-9]{3,})$/)){
 	$('#alert').text('Please provide a username at least 3 character long');
 	$('#alert').show();
 	$('#passport_alert').remove();
@@ -59,7 +59,7 @@ function validateUserNameAndPassword() {
     return false;
   }
   
-  if(!$('#passwd').val().trim().match(/^([a-zA-Z]{4,})$/)){
+  if(!$('#passwd').val().trim().match(/^([a-zA-Z0-9]{4,})$/)){
 	$('#alert').text('Please provide a password at least 4 character long');
 	$('#alert').show();
 	$('#passport_alert').remove();

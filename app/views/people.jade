@@ -17,6 +17,19 @@ html
             img(src="/img/photo4.png" height=60)
           div.col-xs-8.col-sm-9.col-md-10.col-lg-10
             strong #{user_name}
+          .dropdown(style="text-align:right; width: 200px; margin-left:900px")
+            button(type="button" class='btn btn-default dropdown-toggle' id="dropdownMenu1" data-toggle="dropdown") Share Status
+            ul(class="dropdown-menu dropdown-menu-right" role="menu" aria-labelledby="dropdownMenu1")
+              li(role="presentation")
+                a(role="menuitem", tabindex="-1", href="#", class="list-group-item list-group-item-success") OK 
+              li(role="presentation")
+                a(role="menuitem", tabindex="-1", href="#", class="list-group-item list-group-item-warning") Help
+              li(role="presentation")
+                a(role="menuitem", tabindex="-1", href="#", class="list-group-item list-group-item-danger") Emergency
+              li(role="presentation")
+                a(role="menuitem", tabindex="-1", href="#") Undefined
+          div.col-xs-3.col-sm-2.col-md-1.col-lg-1
+            img(src="/img/ok.png" height=30 margin-left:10px)   
       div.well#participants_online
       br
       //
